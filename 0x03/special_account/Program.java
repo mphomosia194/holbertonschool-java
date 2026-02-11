@@ -37,7 +37,7 @@ public class Program {
             account3.withdraw(106);
             System.out.printf(Locale.GERMANY, "Account %s - balance: %.2f\n", account3.getAccountNumber(), account3.getBalance());
             account3.applyMonthlyUpdate();
-            System.out.printf(Locale.GERMANY, "Account %s - balance: %.2f\n", account3.getAccountNumber(), account3.getBalance());
+            System.out.printf(Locale.GERMANY, "Account %s - balance: %.2f\n\n", account3.getAccountNumber(), account3.getBalance());
         } catch (Exception ex) {
             System.out.println(ex.getMessage() + "\n");
         }
