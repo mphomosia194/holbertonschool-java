@@ -10,7 +10,7 @@ public class Book {
     public Book(String title, String author, double price)
             throws InvalidAuthorException, InvalidBookException {
 
-        setAuthor(author);
+        setAuthor(author);     // IMPORTANT ORDER
         setTitle(title);
         setPrice(price);
     }
@@ -34,10 +34,9 @@ public class Book {
         }
 
         String[] names = author.split("\\s+");
-        for (String name : names) {
-            if (!Character.isUpperCase(name.charAt(0))) {
-                throw new InvalidAuthorException("Invalid author name");
-            }
+
+        if (Character.isDigit(names[1].charAt(0))) {
+            throw new InvalidAuthorException("Invalid author name");
         }
 
         this.author = author;
