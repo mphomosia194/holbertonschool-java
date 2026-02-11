@@ -7,6 +7,6 @@ public class Numbers0to99 {
             else
                 output.append(i);
         }
-        System.out.print(output);
+        System.out.println(output);
     }
 }
