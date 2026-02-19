@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
         products.Book book1 = new products.Book("Dune", 2017, "United States", 56.30, 680, "Frank Herbert", 1);
