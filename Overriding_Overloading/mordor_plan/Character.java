@@ -19,12 +19,12 @@ public class Character {
         else if (happinessPoints >= 1 && happinessPoints <= 15)
             return new Happy();
         else
-            return new VeryHappy();
+            return new MuitoFeliz();
     }
 
     @Override
     public String toString() {
         Mood mood = getCurrentMood();
-        return happinessPoints + " - " + mood.getClass().getSimpleName();
+        return happinessPoints + " - " + mood.toString();
     }
 }
