@@ -12,7 +12,5 @@ public class Program {
         Employee employee = new Employee("Jane Doe", 1, address);
 
         employee.introduce();
-
-        System.out.println();
     }
 }
