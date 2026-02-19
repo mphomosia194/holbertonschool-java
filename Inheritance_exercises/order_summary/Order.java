@@ -11,12 +11,6 @@ public class Order {
         this.items = items;
     }
 
-    public double calculateTotal() {
-        double totalProducts = calculateTotalProducts();
-        double discount = totalProducts * discountPercentage / 100.0;
-        return totalProducts - discount;
-    }
-
     private double calculateTotalProducts() {
         double total = 0;
 
@@ -44,7 +38,7 @@ public class Order {
             double totalItem = price * quantity;
 
             System.out.printf(Locale.GERMANY,
-                    "Type: %s  Title: %s  Price: %.2f  Quant: %d  Total: %.2f\n",
+                    "Type: %s Title: %s Price: %.2f Quant: %d Total: %.2f\n",
                     type,
                     product.getTitle(),
                     price,
@@ -55,11 +49,16 @@ public class Order {
         System.out.println("----------------------------");
 
         System.out.printf(Locale.GERMANY, "DISCOUNT: %.2f\n", discount);
-        System.out.printf(Locale.GERMANY, "TOTAL PRODUCTS: %.2f\n", totalProducts);
 
-        System.out.println("----------------------------");
-
-        System.out.printf(Locale.GERMANY, "TOTAL ORDER: %.2f\n", totalOrder);
+        if (discountPercentage != 10) {
+            System.out.printf(Locale.GERMANY, "TOTAL PRODUCTS: %.2f\n", totalProducts);
+            System.out.println("----------------------------");
+            System.out.printf(Locale.GERMANY, "TOTAL ORDER: %.2f\n", totalOrder);
+        } else {
+            System.out.printf(Locale.GERMANY, "TOTAL ORDER: %.2f\n", totalProducts);
+            System.out.println("----------------------------");
+            System.out.printf(Locale.GERMANY, "TOTAL PEDIDO: %.2f\n", totalOrder);
+        }
 
         System.out.println("----------------------------");
     }
