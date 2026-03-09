@@ -5,7 +5,7 @@ public class Task {
     private int identifier;
 
     public Task(String description, int identifier) {
-        if (description == null || description.trim().isEmpty()) {
+        if (description == null || description.trim().equals("")) {
             throw new IllegalArgumentException("Invalid task description");
         }
         this.description = description;
@@ -17,7 +17,7 @@ public class Task {
         return description;
     }
 
-    public boolean getIsDone() {
+    public boolean isDone() {
         return isDone;
     }
 
@@ -26,7 +26,7 @@ public class Task {
     }
 
     public void modifyDescription(String description) {
-        if (description == null || description.trim().isEmpty()) {
+        if (description == null || description.trim().equals("")) {
             throw new IllegalArgumentException("Invalid task description");
         }
         this.description = description;

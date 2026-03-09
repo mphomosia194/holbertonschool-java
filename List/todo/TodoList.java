@@ -51,7 +51,7 @@ public class TodoList {
 
     public void listTasks() {
         for (Task t : tasks) {
-            String status = t.getIsDone() ? "[X]" : "[ ]";
+            String status = t.isDone() ? "[X]" : "[ ]";
             System.out.println(status + "  Id: " + t.getIdentifier() + " - Description: " + t.getDescription());
         }
     }
