@@ -29,6 +29,10 @@ public class PositiveInteger {
         validate(value);
         this.value = value;
     }
+    public void setValor(int value) {
+    validate(value);
+    this.value = value;
+}
 
     // Validation method
     private void validate(int value) {
