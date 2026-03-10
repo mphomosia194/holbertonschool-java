@@ -22,25 +22,25 @@ public class Program {
         ArrayList<Phone> result1 = phoneList1.isFind("John Doe");
         if (result1 == null)
             System.out.println("Phones not found");
-        else 
+        else
             System.out.println(result1);
 
         ArrayList<Phone> result2 = phoneList1.isFind("Tom Smith");
         if (result2 == null)
             System.out.println("Phones not found");
-        else   
+        else
             System.out.println(result2);
 
         ArrayList<Phone> result3 = phoneList1.isFind("Carlos Alberto");
         if (result3 == null)
             System.out.println("Phones not found");
-        else 
+        else
             System.out.println(result3);
 
         ArrayList<Phone> result4 = phoneList1.isFind("Richard Bob");
         if (result4 == null)
             System.out.println("Phones not found");
-        else 
+        else
             System.out.println(result4);
-    }    
+    }
 }
