@@ -1,10 +1,11 @@
 import java.util.*;
 
 public class ProductSearch {
-    public static List<Product> filter(List<Product> products, FilterCriteria criteria) {
-        List<Product> result = new ArrayList<>();
+    public static List filter(List products, FilterCriteria criteria) {
+        List result = new ArrayList();
 
-        for (Product p : products) {
+        for (Object obj : products) {
+            Product p = (Product) obj;
             if (criteria.test(p)) {
                 result.add(p);
             }
