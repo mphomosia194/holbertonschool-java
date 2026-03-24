@@ -27,8 +27,8 @@ public class Author implements Comparable<Author> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Author)) return false;
-        Author author = (Author) o;
-        return name.equals(author.name) && surname.equals(author.surname);
+        Author a = (Author) o;
+        return name.equals(a.name) && surname.equals(a.surname);
     }
 
     @Override
