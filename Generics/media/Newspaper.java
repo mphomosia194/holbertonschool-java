@@ -1,0 +1,8 @@
+public class Newspaper extends Media {
+    private int articleCount;
+
+    public Newspaper(String name, int articleCount) {
+        super(name);
+        this.articleCount = articleCount;
+    }
+}
