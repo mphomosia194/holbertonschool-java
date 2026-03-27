@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Product {
     private int code;
     private String name;
@@ -17,6 +19,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s $ %.2f", code, name, category, price);
+        return String.format(Locale.FRANCE, "[%d] %s %s $ %.2f", code, name, category, price);
     }
 }
