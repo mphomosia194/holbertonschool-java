@@ -13,25 +13,11 @@ public class Product {
         this.type = type;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public int getStockQuantity() {
-        return stockQuantity;
-    }
-
-    public ProductTypes getType() {
-        return type;
-    }
+    public String getName() { return name; }
+    public double getPrice() { return price; }
+    public double getWeight() { return weight; }
+    public int getStockQuantity() { return stockQuantity; }
+    public ProductTypes getType() { return type; }
 
     @Override
     public String toString() {
