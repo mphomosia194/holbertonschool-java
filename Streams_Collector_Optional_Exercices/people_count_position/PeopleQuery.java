@@ -8,6 +8,15 @@ public class PeopleQuery {
                 .collect(Collectors.groupingBy(
                         Person::getPosition,
                         Collectors.counting()
+                ))
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.<String, Long>comparingByKey().reversed())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new
                 ));
     }
 }
