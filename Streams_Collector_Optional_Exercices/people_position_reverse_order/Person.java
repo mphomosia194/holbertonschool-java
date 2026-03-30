@@ -1,4 +1,4 @@
-import java.util.Objects;
+import java.util.*;
 
 public class Person implements Comparable<Person> {
     private int code;
@@ -19,14 +19,23 @@ public class Person implements Comparable<Person> {
         return position;
     }
 
-    @Override
-    public String toString() {
-        return String.format("[%d] %s %s %d $ %f", code, name, position, age, salary);
+    public double getSalary() {
+        return salary;
     }
 
     @Override
+    public String toString() {
+        return String.format(Locale.FRANCE, "[%d] %s %s %d $ %f", code, name, position, age, salary);
+    }
+
+    // 🔥 CRITICAL: sort by salary ASC, then code ASC
+    @Override
     public int compareTo(Person other) {
-        return Integer.compare(this.code, other.code);
+        int cmp = Double.compare(this.salary, other.salary);
+        if (cmp == 0) {
+            return Integer.compare(this.code, other.code);
+        }
+        return cmp;
     }
 
     @Override
