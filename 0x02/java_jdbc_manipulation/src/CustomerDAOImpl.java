@@ -11,6 +11,9 @@ public class CustomerDAOImpl implements CustomerDAO {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(connectionUrl);
+            if (conn != null) {
+                System.out.println("Connected to SQLite database.");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -20,8 +23,8 @@ public class CustomerDAOImpl implements CustomerDAO {
     @Override
     public void createTable(String connectionUrl) {
         String sql = "CREATE TABLE IF NOT EXISTS customers (" +
-                     "id INTEGER PRIMARY KEY, " +
-                     "name TEXT, " +
+                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                     "name TEXT NOT NULL, " +
                      "age INTEGER, " +
                      "cpf TEXT, " +
                      "rg TEXT);";
@@ -36,16 +39,15 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public void insert(String connectionUrl, Customer customer) {
-        String sql = "INSERT INTO customers(id, name, age, cpf, rg) VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO customers(name, age, cpf, rg) VALUES(?, ?, ?, ?)";
 
         try (Connection conn = connect(connectionUrl);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            pstmt.setInt(1, customer.getId());
-            pstmt.setString(2, customer.getName());
-            pstmt.setInt(3, customer.getAge());
-            pstmt.setString(4, customer.getCpf());
-            pstmt.setString(5, customer.getRg());
+            pstmt.setString(1, customer.getName());
+            pstmt.setInt(2, customer.getAge());
+            pstmt.setString(3, customer.getCpf());
+            pstmt.setString(4, customer.getRg());
 
             pstmt.executeUpdate();
         } catch (Exception e) {
