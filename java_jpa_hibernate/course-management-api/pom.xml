@@ -6,6 +6,8 @@
     <groupId>com.techcamps.course.management</groupId>
     <artifactId>course-management-api</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Course Management Project</name>
+    <description>Course Management Project using Hibernate and JPA</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
