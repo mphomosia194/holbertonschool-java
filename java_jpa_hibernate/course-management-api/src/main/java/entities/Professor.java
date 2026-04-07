@@ -1,21 +1,17 @@
 package entities;
 
 import javax.persistence.*;
-import java.util.*;
 
 @Entity
-public class Teacher {
+public class Professor {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String name;
-
-    @OneToMany(mappedBy = "teacher")
-    private List<Course> courses = new ArrayList<>();
+    private String fullName;
+    private String registration;
+    private String email;
 
     public Long getId() { return id; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
 }

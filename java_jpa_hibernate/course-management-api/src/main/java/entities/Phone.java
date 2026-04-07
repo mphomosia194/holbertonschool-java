@@ -9,9 +9,8 @@ public class Phone {
     @GeneratedValue
     private Long id;
 
+    private String areaCode;
     private String number;
 
     public Long getId() { return id; }
-    public String getNumber() { return number; }
-    public void setNumber(String number) { this.number = number; }
 }

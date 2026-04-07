@@ -11,10 +11,5 @@ public class CourseMaterial {
 
     private String url;
 
-    @OneToOne(mappedBy = "material")
-    private Course course;
-
     public Long getId() { return id; }
-    public String getUrl() { return url; }
-    public void setUrl(String url) { this.url = url; }
 }

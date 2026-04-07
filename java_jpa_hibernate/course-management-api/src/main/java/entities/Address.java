@@ -10,8 +10,12 @@ public class Address {
     private Long id;
 
     private String street;
+    private String address;
+    private String number;
+    private String neighboorhood;
+    private String city;
+    private String state;
+    private String zipCode;
 
     public Long getId() { return id; }
-    public String getStreet() { return street; }
-    public void setStreet(String street) { this.street = street; }
 }
