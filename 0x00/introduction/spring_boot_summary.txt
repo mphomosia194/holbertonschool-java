@@ -1,0 +1,9 @@
+Spring Boot is a Java framework designed to simplify the development of applications, especially microservices. It was introduced in 2013 based on the Spring Framework and aims to reduce the complexity of configuration by providing ready-to-use defaults and tools.
+
+One of the main benefits of Spring Boot is its ability to provide basic configurations automatically, allowing developers to focus on business logic rather than setup. It includes an embedded application server such as Apache Tomcat, which eliminates the need to install and configure external servers. Spring Boot also supports rapid development, easy integration with databases, and seamless use of various Spring modules such as Spring Data JPA and Hibernate.
+
+New dependencies such as JPA, Hibernate, and others are added through build tools like Apache Maven. Developers define these dependencies in the pom.xml file, and Maven automatically downloads and manages them along with their required sub-dependencies.
+
+In my opinion, Spring Tools Suite (STS) is the best IDE for working with Spring Boot because it is specifically designed for Spring development and provides built-in support for creating, running, and managing Spring applications efficiently.
+
+Spring Initializr is a tool that helps developers quickly generate a Spring Boot project with the necessary configurations and dependencies. It allows users to select the required libraries and project structure, making it easier to start development without manual setup.
