@@ -1,0 +1,7 @@
+Microservices are an architectural approach used to build applications as a collection of small, independent, and loosely coupled services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently without affecting the entire system.
+
+In a monolithic architecture, the entire application is built as a single unit where all components are tightly coupled and share a single database. This makes scaling and maintenance more difficult. In contrast, microservices architecture decomposes the application into smaller services, each with its own responsibility and often its own database, allowing greater flexibility and scalability.
+
+Some benefits of microservices architecture include: improved scalability, as services can be scaled independently; faster development and deployment, since teams can work on different services simultaneously; and fault isolation, meaning failure in one service does not affect the entire application.
+
+Microservices communicate using different methods such as HTTP (REST APIs), message-based communication (queues), and event-driven communication. These communication methods enable services to interact efficiently while remaining independent.
