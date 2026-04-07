@@ -1,0 +1,9 @@
+Serverless architecture is an execution model in which the cloud provider is responsible for running application code and dynamically allocating the necessary resources. Developers do not need to manage servers or infrastructure, and they are charged only for the resources used during execution.
+
+Function as a Service (FaaS) is a cloud computing model that allows developers to create and run small units of code (functions) without managing infrastructure. These functions are event-driven and executed in stateless environments, handling specific business logic while relying on cloud services for state management.
+
+The benefits of serverless architecture include reduced infrastructure costs, since users pay only for what they use; increased developer productivity, as there is no need to manage servers; automatic scalability; and improved fault tolerance, as failures in one function do not affect the entire system.
+
+Cloud computing refers to the delivery of computing services such as servers, storage, databases, networking, and software over the internet. Its benefits include cost savings, scalability, reliability, high performance, and global accessibility without the need for on-premises infrastructure.
+
+In a monolithic architecture, all components are tightly coupled within a single application, making scaling and maintenance difficult. Microservices architecture breaks the application into smaller, loosely coupled services that can be developed and deployed independently. Serverless architecture goes further by abstracting infrastructure management entirely, allowing developers to focus only on writing and deploying functions, which are executed on demand.
