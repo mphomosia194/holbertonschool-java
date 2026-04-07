@@ -1,6 +1,7 @@
 {
   "cep": "13086-902",
-  "logradouro": "Rua Sérgio Buarque de Holanda",
+  "logradouro": "Rua Sérgio Buarque de Holanda"
+  "street": "Rua Sérgio Buarque de Holanda",
   "complemento": "",
   "bairro": "Cidade Universitária",
   "cidade": "Campinas",
