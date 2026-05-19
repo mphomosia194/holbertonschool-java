@@ -1,0 +1,5 @@
+com/example/product/controller/ProductController.class
+com/example/product/config/SwaggerConfiguration.class
+com/example/product/model/Product.class
+com/example/product/model/ProductRepository.class
+com/example/product/ProductApiApplication.class

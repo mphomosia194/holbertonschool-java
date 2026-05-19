@@ -1,0 +1,5 @@
+/root/holbertonschool-java/0x08/ProductAPI/src/main/java/com/example/product/ProductApiApplication.java
+/root/holbertonschool-java/0x08/ProductAPI/src/main/java/com/example/product/model/Product.java
+/root/holbertonschool-java/0x08/ProductAPI/src/main/java/com/example/product/config/SwaggerConfiguration.java
+/root/holbertonschool-java/0x08/ProductAPI/src/main/java/com/example/product/model/ProductRepository.java
+/root/holbertonschool-java/0x08/ProductAPI/src/main/java/com/example/product/controller/ProductController.java
