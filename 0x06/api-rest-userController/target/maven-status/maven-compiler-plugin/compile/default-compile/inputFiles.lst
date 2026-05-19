@@ -1,0 +1,7 @@
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/controller/UserController.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/exception/UserIdException.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/exception/ExceptionService.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/exception/UserNameException.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/UserApiApplication.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/exception/UserErrorResponse.java
+/root/holbertonschool-java/0x06/api-rest-userController/src/main/java/com/example/user/exception/CPFException.java
